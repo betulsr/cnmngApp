@@ -17,15 +17,13 @@ class _SettingsScreenState extends State<ProfileBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
-          body: Padding(
+      backgroundColor: Colors.white,
+          body: Container(
+          child: Padding(
             // I set the padding here to only the top, you can increase the double (16.0) to suit exactly what you're looking to achieve visually
               padding: EdgeInsets.only(top: 19.0),
-
-
-
-    //SizedBox(height: 0.1),
               child:   SettingsList(
+                backgroundColor: Colors.white,
             sections: [
               SettingsSection(
                 title: 'Languages & Preferences',
@@ -57,6 +55,7 @@ class _SettingsScreenState extends State<ProfileBody> {
             ]
           )
 
+          )
           )
       );
   }
