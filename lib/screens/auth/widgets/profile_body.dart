@@ -1,3 +1,4 @@
+import 'package:cnmngroup/screens/auth/widgets/contactinfo.dart';
 import 'package:cnmngroup/screens/auth/widgets/languages.dart';
 import 'package:flutter/material.dart';
 import 'package:settings_ui/settings_ui.dart';
@@ -49,7 +50,15 @@ class _SettingsScreenState extends State<ProfileBody> {
                         context.signOut();
                         Navigator.of(context).push(AuthScreen.route);
                       },
-                  )
+                  ),
+                  SettingsTile(
+                  title: 'Contact Info',
+                  leading: Icon(Icons.phone),
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => ContactInfo()));
+                    },
+                )
                 ]
               )
             ]
