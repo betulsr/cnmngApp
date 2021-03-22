@@ -19,14 +19,14 @@ class SignIn extends StatelessWidget {
     final isSubmitting = context.isSubmitting();
     return SignInForm(
       child: Padding(
-        padding: const EdgeInsets.all(30.0),
+        padding: const EdgeInsets.all(40.0),
         child: Column(
           children: [
             Expanded(
-              flex: 5,
+              flex: 4,
               child: Align(
                 alignment: Alignment.center,
-                child: Image.asset('assets/cnmngca.png',width:30000,height:10000),
+                child: Image.asset('assets/logo.png',width:40000,height:20000),
               ),
             ),
             Expanded(
